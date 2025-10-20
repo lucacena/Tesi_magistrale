@@ -48,9 +48,9 @@ Per eseguire il progetto è sufficiente seguire questi passaggi:
    
 
 
-## All'interno della cartella [EXPLANATIONS](https://github.com/lucacena/Progetto_tesi/tree/main/explanations) è presente lo studio della variazione dell'importanza delle features prima e dopo l'anonimizzazione utilizzando due metodologie: SHAP e LIME.
-### Per ogni dataset, è presente una directory sia per il dataset orignale che anonimizzzato suddiviso ulteriormente per i 4 modelli studiati.
+### All'interno della cartella [EXPLANATIONS](https://github.com/lucacena/Progetto_tesi/tree/main/explanations) è presente lo studio della variazione dell'importanza delle features prima e dopo l'anonimizzazione utilizzando due metodologie: SHAP e LIME.
+#### Per ogni dataset, è presente una directory sia per il dataset orignale che anonimizzzato suddiviso ulteriormente per i 4 modelli studiati.
 - *shap_beeswarm*: impatto delle features sulle decisioni prese dal modello
 - *shap_importance*: salvataggio dell'importanza delle features in decisioni del modello 
 - *rank_change*: come cambia il rank delle features passando da un dataset NON anonimizzato a uno anonimizzato, visualizzato come bar_plot
-- *rank_line*: altra visualizzazione del cambiamento di ranking delle features 
+- *rank_evolution*: evoluzione importanza tutte features al crescere di k e l

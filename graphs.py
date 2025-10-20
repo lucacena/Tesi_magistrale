@@ -38,9 +38,7 @@ for dataset in results_df["Dataset"].unique():
     else:
         label_max_anon = None
 
-    # ----------------------
-    # Grafico principale semplificato
-    # ----------------------
+    # Grafico principale
     if label_max_anon and label_max_anon in subset["Anonimizzazione_label"].values:
         labels_anon = ["Non anonimizzato", label_max_anon]
         color_map = {labels_anon[0]: cmap(0), labels_anon[1]: cmap(1)}

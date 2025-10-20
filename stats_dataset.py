@@ -116,17 +116,6 @@ def heatmap(dataset, dataset_name):
     plt.tight_layout()
     #plt.savefig(f"grafico.png", dpi=300, bbox_inches="tight")
     plt.savefig(os.path.join(save_dir, "heatmap.png"))
-"""Ogni quadrato indica quanto due feature numeriche sono linearmente correlate.
-Colori caldi (rossi) → correlazione positiva forte.
-Colori freddi (blu) → correlazione negativa forte.
-Colori neutri (bianco/chiaro) → bassa correlazione.
-
-| Valore | Significato                                                                               |
-| ------ | ----------------------------------------------------------------------------------------- |
-| 1.0    | correlazione positiva perfetta (quando una aumenta, l’altra aumenta proporzionalmente)    |
-| -1.0   | correlazione negativa perfetta (quando una aumenta, l’altra diminuisce proporzionalmente) |
-| 0      | nessuna correlazione lineare                                                              |
-"""
 
 
 def feature_distribution(dataset, dataset_name):
@@ -266,7 +255,6 @@ def dataset_info(dataset, dataset_name):
     plt.close()
 
     #print(f"Salvato: _info.png e {}_dtypes.png")
-
 
 
 def descriptive_stats(dataset, dataset_name):

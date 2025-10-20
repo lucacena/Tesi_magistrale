@@ -8,18 +8,6 @@ import warnings
 warnings.filterwarnings('ignore', message='X does not have valid feature names')
 
 def shap_explainability(m, test_feat, k, dataset_name, mod_name, anonimizzato, ldiv, make_beeswarm=True):
-    """
-    Genera ed esporta grafici e CSV di importanza SHAP.
-
-    Parametri:
-        m: modello già allenato
-        test_feat (pd.DataFrame): features di test
-        k (int): fattore di anonimizzazione
-        dataset_name (str): nome del dataset
-        mod_name (str): nome del modello
-        anonimizzato (bool): True se dataset anonimizzato, False altrimenti
-        ldiv: parametro per SHAP beeswarm (non usato qui)
-    """
     # Codifica le colonne categoriche
     for col in test_feat.columns:
         if test_feat[col].dtype == object or str(test_feat[col].dtype) == 'category':
